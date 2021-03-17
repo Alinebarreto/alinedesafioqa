@@ -1,0 +1,449 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4763685300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Invalid inputs for Email adress",
+        "description": "",
+        "id": "create-an-account;invalid-inputs-for-email-adress;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 712926100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10065577100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I am on Your Logo page",
+            "match": {
+              "location": "YourLogoSteps.iAmOnYourLogoPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1641717600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "click on Sign in link",
+            "match": {
+              "location": "AuthenticationPageSteps.clickOnSignInLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 200326400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I set an teste@gmail.com Email address for create an account",
+            "match": {
+              "arguments": [
+                {
+                  "val": "teste@gmail.com",
+                  "offset": 9
+                }
+              ],
+              "location": "AuthenticationPageSteps.iSetAnInvalidEmailAddressForCreateAnAccount(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 144879300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "click on Create an account button",
+            "match": {
+              "location": "AuthenticationPageSteps.clickOnCreateAnAccountButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 629784700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I visualize an An account using this email address has already been registered. Please enter a valid password or request a new one. with error\u0027s description",
+            "match": {
+              "arguments": [
+                {
+                  "val": "An account using this email address has already been registered. Please enter a valid password or request a new one.",
+                  "offset": 15
+                }
+              ],
+              "location": "AuthenticationPageSteps.iVisualizeAnExceptionWithErrorSDescription(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3304548300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Invalid inputs for Email adress",
+        "description": "",
+        "id": "create-an-account;invalid-inputs-for-email-adress;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 687530800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9405335600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I am on Your Logo page",
+            "match": {
+              "location": "YourLogoSteps.iAmOnYourLogoPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1775282800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "click on Sign in link",
+            "match": {
+              "location": "AuthenticationPageSteps.clickOnSignInLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 124481500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I set an  Email address for create an account",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 9
+                }
+              ],
+              "location": "AuthenticationPageSteps.iSetAnInvalidEmailAddressForCreateAnAccount(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 117477300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "click on Create an account button",
+            "match": {
+              "location": "AuthenticationPageSteps.clickOnCreateAnAccountButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 629543200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I visualize an Invalid email address. with error\u0027s description",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invalid email address.",
+                  "offset": 15
+                }
+              ],
+              "location": "AuthenticationPageSteps.iVisualizeAnExceptionWithErrorSDescription(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3325883700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Invalid inputs for Email adress",
+        "description": "",
+        "id": "create-an-account;invalid-inputs-for-email-adress;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 785947200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4118709400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I am on Your Logo page",
+            "match": {
+              "location": "YourLogoSteps.iAmOnYourLogoPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1398584800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "click on Sign in link",
+            "match": {
+              "location": "AuthenticationPageSteps.clickOnSignInLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 193071900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I set an 243243!#$# Email address for create an account",
+            "match": {
+              "arguments": [
+                {
+                  "val": "243243!#$#",
+                  "offset": 9
+                }
+              ],
+              "location": "AuthenticationPageSteps.iSetAnInvalidEmailAddressForCreateAnAccount(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 131376400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "click on Create an account button",
+            "match": {
+              "location": "AuthenticationPageSteps.clickOnCreateAnAccountButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 594252200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I visualize an Invalid email address. with error\u0027s description",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invalid email address.",
+                  "offset": 15
+                }
+              ],
+              "location": "AuthenticationPageSteps.iVisualizeAnExceptionWithErrorSDescription(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3320658500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Invalid inputs for Email adress",
+        "description": "",
+        "id": "create-an-account;invalid-inputs-for-email-adress;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 685363800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4199211500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I am on Your Logo page",
+            "match": {
+              "location": "YourLogoSteps.iAmOnYourLogoPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 992908400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "click on Sign in link",
+            "match": {
+              "location": "AuthenticationPageSteps.clickOnSignInLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 651940600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I set an fasfdsgfdsgfd Email address for create an account",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fasfdsgfdsgfd",
+                  "offset": 9
+                }
+              ],
+              "location": "AuthenticationPageSteps.iSetAnInvalidEmailAddressForCreateAnAccount(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 121669400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "click on Create an account button",
+            "match": {
+              "location": "AuthenticationPageSteps.clickOnCreateAnAccountButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 604133000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I visualize an Invalid email address. with error\u0027s description",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invalid email address.",
+                  "offset": 15
+                }
+              ],
+              "location": "AuthenticationPageSteps.iVisualizeAnExceptionWithErrorSDescription(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Create an account",
+    "description": "",
+    "id": "create-an-account",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/Authentication.feature",
+    "tags": []
+  }
+]

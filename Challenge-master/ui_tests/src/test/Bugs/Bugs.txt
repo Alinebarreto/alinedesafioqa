@@ -1,0 +1,108 @@
+Bug 1: Lupa pesquisar não tem ação
+
+  Cenario: Acionar lupa de pesquisa na sessão Por Professor
+    Dado    que eu acesse a home da estrategia concursos
+    E       pesquiso na secao Por Professor por Ena Loiola
+    Quando  eu clico no ícone da Lupa
+    Então   não há ação e a seleção é ocultada
+
+
+    O button submit está disabled
+
+    <button type="submit" title="Filtrar" disabled="">
+    <span class="icon-find"></span>
+    </button>
+
+________________________________________________________________________________________________________________________
+
+Bug 2: Retorno de pesquisa duplicado
+
+  Cenario: Acionar lupa de pesquisa na sessão Por Professor
+    Dado    que eu acesse a home da estrategia concursos
+    Quando  pesquiso no campo busca da home por teste
+    Então   retorna 2 resultados com curso Pacote Completo p/ Teste Preparatório ANPAD (Orientação Acadêmica) - 2021
+
+________________________________________________________________________________________________________________________
+
+Bug 3: Retorno lento de imagens no carrocel
+
+  Cenario: Clicar em opção de assinaturas OAB
+    Dado    que eu acesse a home da estrategia concursos
+    Quando  clico na primeira vez em assinaturas opção OAB
+    Então   não carrega todas as imagens que ficam piscando no carrossel
+    E uma delas fica em branco
+
+
+https://www.estrategiaconcursos.com.br/assinaturas-oab/
+
+<header class="header-black">
+<img id="banner0" style="width: 100%; display: none;" src="https://www.estrategiaconcursos.com.br/assets/img/oab/carossel1.jpg">
+<img id="banner1" style="width: 100%;" src="https://www.estrategiaconcursos.com.br/assets/img/oab/carossel2.jpg">
+<img id="banner2" style="width: 100%; display: none;" src="https://www.estrategiaconcursos.com.br/assets/img/oab/carossel3.jpg">
+</header>
+________________________________________________________________________________________________________________________
+
+Bug 4: Não exibe a trilha "Home >> Assinaturas" no carrocel
+
+  Cenario: Clicar na opção de assinatura OAB
+    Dado    que eu acesse a home da estrategia concursos
+    Quando  clico em assinaturas opção OAB
+    Então   não exibe "Home >> Assinaturas" a esquerda no carrocel
+
+    Pelo padrão do site, ao clicar em todas as sessões: Assinaturas Concursos, Assinaturas Jurídica,
+    Por Concurso, Por Professor, Por Matéria, Por Regisão e Ver Todos foi exibido como padrão uma
+    trilha de cliques como exemplos abaixo, mas na opção OAB não exibiu no carrocel.
+    Home> Cursos> Assinaturas
+    Home> Cursos> Cursos por concurso
+    Home> Cursos> Cursos por professor
+    Home> Cursos> Cursos por matéria
+    Home> Cursos> Cursos por Região
+    Home> Cursos> Todos os cursos
+
+    <ul class="page-header-breadcrumb">
+    <li>
+    <a href="/">Home</a>
+    </li>
+    <li>
+    <a href="/assinaturas">Assinaturas</a>
+    </li>
+    ____________________________________________________________________________________________________________________
+
+    Bug 5: Erro 500 ao tentar baixar ebook manual do futuro delegado da pcro
+
+      Cenario: Clicar no banner do carrocel para baixar ebook manual do futuro delegado da pcro
+        Dado    que eu acesse a home da estrategia concursos
+        Quando  clico em baixar ebook no banner do carrocel
+        Então   exibe a mensagem:
+
+    Esta página não está funcionandogratis.estrategiaconcursos.com.br não consegue atender a esta solicitação no momento.
+    HTTP ERROR 500
+
+Request URL: https://gratis.estrategiaconcursos.com.br/e-book-manual-do-futuro-delegado-da-pcro/
+Request Method: GET
+Status Code: 500
+
+Ao inspecionar o header também exibe a mensagem abaixo:
+x-hacker: If you're reading this, you should visit automattic.com/jobs and apply to join the fun, mention this header.
+
+
+host-header: WordPress.com
+link: <https://gratis.estrategiaconcursos.com.br/wp-json/>; rel="https://api.w.org/"
+link: <https://gratis.estrategiaconcursos.com.br/wp-json/wp/v2/pages/187690>; rel="alternate"; type="application/json"
+link: <https://gratis.estrategiaconcursos.com.br/?p=187690>; rel=shortlink
+
+________________________________________________________________________________________________________________________
+
+Bug 5: Banners 100 e 101 estão repetidos na home
+
+      Cenario: Banners exibidos na ordem 100 e 101 são repetidos "Atualização do pacote anticrime para a OAB - DIREITO PROCESSUAL PENAL"
+        Dado    que eu acesse a home da estrategia concursos
+        Quando  clico clico em próximo banner no lado direito superior
+        Então   os banners 100 e 101 se repetem
+
+
+<h1 class="banner-slider-section-title">
+Atualização do pacote anticrime para a OAB - DIREITO PROCESSUAL PENAL </h1>
+
+<div class="banner-slider-page">
+<span data-current-page="">101</span>/110 <div class="banner-slider-page-progress">

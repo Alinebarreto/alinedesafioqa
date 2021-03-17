@@ -1,0 +1,5 @@
+step_definitions\YourLogoSteps.class
+pageobjects\YourLogoPage.class
+step_definitions\PartsMapSteps.class
+step_definitions\PartsDemandForecastSteps.class
+pageobjects\AuthenticationPage.class
